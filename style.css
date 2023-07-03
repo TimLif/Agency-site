@@ -51,6 +51,7 @@ img {
     padding: 38px 23px 26px 23px;
     display: flex;
     transition: all .3s;
+
 }
 
 .menu__link:hover {
@@ -82,6 +83,36 @@ img {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #000000;
+    -webkit-animation: title 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: title 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes title {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes title {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 .text {
@@ -92,6 +123,7 @@ img {
     line-height: 28px;
     color: #000000;
 }
+
 
 .text_width_500 {
     width: 536px;
@@ -141,7 +173,322 @@ img {
     transition: all 0.3s;
     border: 2px solid transparent;
     box-sizing: border-box;
+    -webkit-animation: button 3s linear both;
+    animation: button 3s linear both;
 }
+
+@-webkit-keyframes button {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes button {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
 
 .button:hover {
     color: #FF2D2D;
@@ -149,7 +496,44 @@ img {
     border: 2px solid #FF0000;
 }
 
-/* lesson 2!! */
+.button_registr {
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+/* -----------------------------------------------------------------------------  кнопка прокрутки*/
+.btn-up {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF3F40;
+    border: 2px solid #FF3F40;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+.btn-up:hover {
+    border: 2px solid #FF3F40;
+    background-color: #F6F2F2;
+}
+
+/* -------------------------------------------------------------------------------  конец кнопки прокрутки*/
 .service {
     padding-top: 108px;
 }
@@ -227,13 +611,14 @@ img {
     row-gap: 52px;
 }
 
-/* flex-basis тут задает размеры блок, типа как видз */
 .service__item {
     flex-grow: 1;
     flex-basis: 290px;
 }
 
-.service__img-1 {
+/* -------------------------------------------------------------- начало анимации */
+.service__img-1:hover {
+    cursor: pointer;
     -webkit-animation: service__img-1 1.6s ease-in-out 0.5s infinite;
     animation: service__img-1 1.6s ease-in-out 0.5s infinite;
 }
@@ -262,7 +647,8 @@ img {
     }
 }
 
-.service__img-2 {
+.service__img-2:hover {
+    cursor: pointer;
     -webkit-animation: service__img-2 3s ease-out infinite both;
     animation: service__img-2 3s ease-out infinite both;
 }
@@ -302,9 +688,8 @@ img {
 
 }
 
-
-
-.service__img-3 {
+.service__img-3:hover {
+    cursor: pointer;
     -webkit-animation: service__img-3 1.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
     animation: service__img-3 1.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
@@ -333,7 +718,8 @@ img {
     }
 }
 
-.service__img-4 {
+.service__img-4:hover {
+    cursor: pointer;
     -webkit-animation: service__img-4 0.3s linear infinite both;
     animation: service__img-4 0.3s linear infinite both;
 }
@@ -403,7 +789,7 @@ img {
 }
 
 
-/* ======================== */
+/*---------------------------------------------------------------- конец анимации */
 
 /* 3 block!!!! */
 
@@ -468,12 +854,16 @@ img {
 }
 
 /* ------------------------------------------------- */
-/* 4 block !!33 lesson */
+/* 4 block */
 .meet {
     margin-top: 132px;
     padding-left: calc(50% - 609px);
     padding-bottom: 115px;
 }
+
+/* .meet__top {
+    position: relative;
+} */
 
 .meet__shadow {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
@@ -508,6 +898,23 @@ img {
     margin-top: 16px;
 }
 
+/* .block {
+    display: none;
+}
+
+.visible {
+    width: 500px;
+    height: 418px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 40px;
+    margin-left: 205px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 26px;
+    border: 1px solid #213B7E;
+} */
 
 .meet__links {
     display: flex;
@@ -546,7 +953,6 @@ img {
     overflow: hidden;
 }
 
-/*  по итогу выезжает плавно слева */
 .meet__people:hover .meet__name-box {
     left: 0;
 }
@@ -556,12 +962,11 @@ img {
     mix-blend-mode: normal;
     opacity: 0.5;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
-    /* тут задаем -100%, чтоб он был изнасально сдвинут, но выше писали оверфлоу хидден чтоб скрыть. А когда будет ховер, то станет все ок */
     left: -100%;
     transition: left 1.3s;
 }
@@ -596,7 +1001,6 @@ img {
     display: flex;
     gap: 22px;
     justify-content: center;
-    /* теперь кнопка зависит от высоты поля радом, то есть от инпута. точнее даже он подставиваетс под высоту родительского блока чтоль. Надо почитать не забыть */
     align-items: stretch;
 }
 
@@ -630,7 +1034,6 @@ img {
     letter-spacing: 0.317046px;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* border: none; */
     box-sizing: border-box;
     border: 2px solid transparent;
     transition: all 0.3s;
@@ -640,9 +1043,6 @@ img {
 .subscribe__button:hover {
     background-color: #fff;
     color: #FF2D2D;
-    /* аутлайн не добавляет значение ширины. С бордером добавлялась ширина и сдвигался блок инпут чутка */
-    /* outline: 2px solid #FF2D2D; */
-    /* но лучш через бордер, поэтому мы в просто классе тоже уже задали бордер, просто невидимый */
     border: 2px solid #FF2D2D;
     cursor: pointer;
 }
@@ -669,13 +1069,11 @@ img {
 
 .get__input {
     height: 69px;
-    /* в плэйсхолдер опен санс снаружи не подтягивается, надо писать */
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    /* тут надо ргба вторым ставить, а не как в макете обычный+ отельно опасити */
     color: #000000;
     background-color: rgba(0, 0, 0, 0.1);
     padding-left: 50px;
@@ -694,17 +1092,11 @@ textarea::placeholder {
     color: black;
 }
 
-/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-
-
 .get__input_textarea {
     height: 252px;
     padding-top: 32px;
     padding-bottom: 32px;
-    /* там можно было увеличивать или уменьшать блок сразу, мы это убираем */
     resize: none;
-    /* видимо чтоб занимало все доступное место на строке */
-    /* grid-column: span 2; */
     grid-column: 1 / -1;
 }
 
@@ -818,19 +1210,64 @@ path {
     transition: fill .3s;
 }
 
-/* path это в иконке сама картиночка а филл ее цвет, то есть как я понимаю выбирается сначала весь блок а потом непосредственно только с пазом работаем */
 .footer__icon:hover path {
     fill: #E0E0E0;
 }
 
 /* MEDIA ZAPROS */
 
+
+@media (max-width: 1272px) {
+    .products__items {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1197px) {
+    .top__content {
+        justify-content: center;
+    }
+
+    .top__info {
+        margin-bottom: 36px;
+    }
+
+
+    .top__video {
+        width: 333px;
+        height: 219px;
+    }
+
+    .service {
+        justify-content: center;
+        padding-top: 0px;
+        padding-left: calc(50% - 856px / 2);
+        padding-right: calc(50% - 856px / 2);
+    }
+
+    .service-flex__content {
+        width: 90%;
+    }
+
+    .service-flex__info {
+        width: auto;
+
+    }
+
+    .service__item {
+        width: auto;
+    }
+
+
+}
+
 @media (max-width: 1024px) {
 
-    /* делаем отступы по 16 пикселей для формата 768 */
     .center,
     .products__items,
-    .get {
+    .get,
+    .service-flex {
         padding-left: calc(50% - 734px / 2);
         padding-right: calc(50% - 734px / 2);
 
@@ -842,11 +1279,13 @@ path {
     }
 
     .top__video {
-        width: 100%;
+        width: 85%;
+        height: 300px;
     }
 
     .service-flex {
         justify-content: center;
+        padding-top: 0px;
     }
 
     .products__items {
@@ -871,6 +1310,12 @@ path {
     }
 
     .meet__people {
+        text-align: center;
+        width: 186px;
+        height: 190px;
+    }
+
+    .meet__photo {
         width: 186px;
         height: 190px;
     }
@@ -893,7 +1338,7 @@ path {
     }
 }
 
-/* хоть и ставим 767, но ориентируемся на разрешение 375/425 */
+
 @media (max-width: 767px) {
 
     .center {
@@ -908,6 +1353,7 @@ path {
 
     .fa-bars {
         margin-right: 32px;
+        cursor: pointer;
 
     }
 
@@ -915,6 +1361,7 @@ path {
         position: absolute;
         top: 32px;
         right: 32px;
+        cursor: pointer;
     }
 
     .fa-solid {
@@ -943,6 +1390,7 @@ path {
         transition: left, .5s;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.9);
+        z-index: 1000;
     }
 
     .title {
@@ -968,11 +1416,21 @@ path {
     }
 
     .top__video {
-        height: 200px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .service-flex {
+        padding-top: 0px;
     }
 
     .service-flex__content {
         width: 100%;
+    }
+
+    .service-flex__info {
+        width: 100%;
+
     }
 
     .service__button {
@@ -1064,5 +1522,13 @@ path {
     .meet__people {
         width: 156px;
         height: 160px;
+        text-align: center;
+    }
+
+    .meet__photo {
+        width: 156px;
+        height: 160px;
     }
 }
+
+/* 301 *293 */
