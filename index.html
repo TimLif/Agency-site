@@ -118,22 +118,22 @@
                 <a href="#" class="products__link" onclick="return false">MOCK UP</a>
             </div>
             <div class="products__items">
-                <a class="products__item" href="#"><img src="pic/nature1.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature2.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature3.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature4.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature5.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature6.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature7.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
-                <a class="products__item" href="#"><img src="pic/nature8.jpg" alt="изображение продукта"
-                        onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature1.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature2.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature3.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature4.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature5.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature6.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature7.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
+                <a class="products__item" href="#"><img class="products__picture" src="pic/nature8.jpg"
+                        alt="изображение продукта" onclick="return false"></a>
             </div>
         </div>
     </section>
@@ -303,15 +303,22 @@
         // photo change
         const bigImg = document.querySelector(".meet__person");
         const smallImg = document.querySelectorAll(".meet__photo");
+        // const meetPersonName = document.querySelector(".meet__person-name");
+        // const meetHeading = document.querySelector(".meet__heading");
 
         smallImg.forEach(miniImg => {
             miniImg.addEventListener("click", function (event) {
                 bigImg.src = event.target.src;
                 bigImg.style.width = "309px";
                 bigImg.style.height = "485px";
-
+                // meetHeading.textContent = 
             })
         })
+        // meetPersonName.forEach(test => {
+        //     test.addEventListener("click", function (event) {
+        //         meetHeading.textContent = meetPersonName;
+        //     })
+        // })
 
 
 
