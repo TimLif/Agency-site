@@ -849,6 +849,10 @@ img {
 
 }
 
+.products__picture:hover {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .products__item {
     display: flex;
 }
@@ -1131,7 +1135,7 @@ textarea::placeholder {
     border-radius: 5px;
     border: none;
     height: 75px;
-    grid-column: 1 / -1;
+    grid-column: 1 /-1;
     border: 2px solid transparent;
     transition: all 0.3s;
 }
